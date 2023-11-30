@@ -1,0 +1,2 @@
+m-explore/explore:m-explore/map_merge:perception:plannedcntrl
+-DCATKIN_DEVEL_PREFIX=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install -G Unix Makefiles

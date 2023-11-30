@@ -135,6 +135,10 @@ def controller(waypoint):
 def planning_callback(msg):
   
   try:
+
+    if msg.z <= -50.0:
+      print("Object not detected - no trajectory is needed!!!")
+      return
     msg2send = (msg.x, msg.y)
     trajectory = plan_curved_trajectory(msg2send) ## TODO: What is the tuple input to this function?
     

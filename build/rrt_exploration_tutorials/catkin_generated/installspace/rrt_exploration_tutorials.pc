@@ -1,0 +1,8 @@
+prefix=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install
+
+Name: rrt_exploration_tutorials
+Description: Description of rrt_exploration_tutorials
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

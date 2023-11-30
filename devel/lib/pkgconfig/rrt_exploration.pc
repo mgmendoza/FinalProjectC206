@@ -1,0 +1,8 @@
+prefix=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel
+
+Name: rrt_exploration
+Description: Description of rrt_exploration
+Version: 1.0.0
+Cflags: -I/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/include
+Libs: -L${prefix}/lib 
+Requires: message_runtime
