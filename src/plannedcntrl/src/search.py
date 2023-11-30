@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
   #Run this program as a new node in the ROS computation graph 
   #called /turtlebot_controller.
-  rospy.init_node('turtlebot_serach', anonymous=True)
+  rospy.init_node('turtlebot_search', anonymous=True)
 
   rospy.Subscriber("goal_point", Point, search_callback) ## TODO: what are we subscribing to here?
   
