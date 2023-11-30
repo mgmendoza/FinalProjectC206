@@ -15,6 +15,7 @@ from geometry_msgs.msg import TransformStamped, PoseStamped, Twist, Point
 from tf.transformations import quaternion_from_euler
 from tf2_geometry_msgs import do_transform_pose
 from trajectory import plan_curved_trajectory
+import os
 
 #Define the method which contains the main functionality of the node.
 def controller(waypoint):
@@ -139,6 +140,8 @@ def planning_callback(msg):
     if msg.z <= -50.0:
       print("Object not detected - no trajectory is needed!!!")
       return
+    
+    os.system('roslaunch turtlebot_navigation_ours amcl_customized.launch')
     msg2send = (msg.x, msg.y)
     trajectory = plan_curved_trajectory(msg2send) ## TODO: What is the tuple input to this function?
     
