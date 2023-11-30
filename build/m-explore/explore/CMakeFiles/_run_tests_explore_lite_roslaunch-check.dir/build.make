@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src
+CMAKE_SOURCE_DIR = /home/mgmendoza/Documents/FinalProjectC206/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build
+CMAKE_BINARY_DIR = /home/mgmendoza/Documents/FinalProjectC206/build
 
 # Utility rule file for _run_tests_explore_lite_roslaunch-check.
 
@@ -63,10 +63,10 @@ m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build: 
 .PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build
 
 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/cmake_clean.cmake
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/cmake_clean.cmake
 .PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/clean
 
 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/depend:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mgmendoza/Documents/FinalProjectC206/src /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore /home/mgmendoza/Documents/FinalProjectC206/build /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/depend
 

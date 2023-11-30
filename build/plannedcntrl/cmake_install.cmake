@@ -1,8 +1,8 @@
-# Install script for directory: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/plannedcntrl
+# Install script for directory: /home/mgmendoza/Documents/FinalProjectC206/src/plannedcntrl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mgmendoza/Documents/FinalProjectC206/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/plannedcntrl/catkin_generated/installspace/plannedcntrl.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/build/plannedcntrl/catkin_generated/installspace/plannedcntrl.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plannedcntrl/cmake" TYPE FILE FILES
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/plannedcntrl/catkin_generated/installspace/plannedcntrlConfig.cmake"
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/plannedcntrl/catkin_generated/installspace/plannedcntrlConfig-version.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/plannedcntrl/catkin_generated/installspace/plannedcntrlConfig.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/plannedcntrl/catkin_generated/installspace/plannedcntrlConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plannedcntrl" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/plannedcntrl/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/plannedcntrl" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/src/plannedcntrl/package.xml")
 endif()
 

@@ -1,4 +1,4 @@
-prefix=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install
+prefix=/home/mgmendoza/Documents/FinalProjectC206/install
 
 Name: explore_lite
 Description: Description of explore_lite

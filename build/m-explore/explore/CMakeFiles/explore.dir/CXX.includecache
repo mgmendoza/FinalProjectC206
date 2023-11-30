@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/include/explore/costmap_client.h
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/include/explore/costmap_client.h
 costmap_2d/costmap_2d.h
 -
 geometry_msgs/Pose.h
@@ -22,7 +22,7 @@ tf/tf.h
 tf/transform_listener.h
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/include/explore/costmap_tools.h
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/include/explore/costmap_tools.h
 costmap_2d/costmap_2d.h
 -
 geometry_msgs/PointStamped.h
@@ -32,7 +32,7 @@ geometry_msgs/PolygonStamped.h
 ros/ros.h
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/include/explore/explore.h
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/include/explore/explore.h
 memory
 -
 mutex
@@ -56,11 +56,11 @@ explore/costmap_client.h
 explore/frontier_search.h
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/include/explore/frontier_search.h
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/include/explore/frontier_search.h
 costmap_2d/costmap_2d.h
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/src/costmap_client.cpp
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/src/costmap_client.cpp
 explore/costmap_client.h
 -
 functional
@@ -70,13 +70,13 @@ mutex
 string
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/src/explore.cpp
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/src/explore.cpp
 explore/explore.h
 -
 thread
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/src/frontier_search.cpp
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/src/frontier_search.cpp
 explore/frontier_search.h
 -
 mutex
@@ -1232,6 +1232,8 @@ ros/datatypes.h
 vector
 -
 map
+-
+memory
 -
 boost/array.hpp
 -

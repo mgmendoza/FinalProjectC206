@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/src/costmap_client.cpp" "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.o"
-  "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/src/explore.cpp" "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.o"
-  "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/src/frontier_search.cpp" "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.o"
+  "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/src/costmap_client.cpp" "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.o"
+  "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/src/explore.cpp" "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.o"
+  "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/src/frontier_search.cpp" "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/eigen3"
-  "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/include"
+  "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/include"
   )
 
 # Targets to which this target links.

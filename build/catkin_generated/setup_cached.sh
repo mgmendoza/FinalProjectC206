@@ -7,4 +7,8 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build'
+export CMAKE_PREFIX_PATH="/home/mgmendoza/Documents/FinalProjectC206/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH='/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu'
+export PWD='/home/mgmendoza/Documents/FinalProjectC206/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/mgmendoza/Documents/FinalProjectC206/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/mgmendoza/Documents/FinalProjectC206/src:$ROS_PACKAGE_PATH"

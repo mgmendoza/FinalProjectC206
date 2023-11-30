@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a  CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o
-/usr/bin/ranlib /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a
+/usr/bin/ar qc /home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a  CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o
+/usr/bin/ranlib /home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a

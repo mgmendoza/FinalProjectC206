@@ -1,8 +1,8 @@
-# Install script for directory: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore
+# Install script for directory: /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mgmendoza/Documents/FinalProjectC206/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/catkin_generated/installspace/explore_lite.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/catkin_generated/installspace/explore_lite.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/explore_lite/cmake" TYPE FILE FILES
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/catkin_generated/installspace/explore_liteConfig.cmake"
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/catkin_generated/installspace/explore_liteConfig-version.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/catkin_generated/installspace/explore_liteConfig.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/catkin_generated/installspace/explore_liteConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/explore_lite" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/explore_lite" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/explore_lite/explore"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/explore_lite" TYPE EXECUTABLE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/explore_lite/explore")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/explore_lite" TYPE EXECUTABLE FILES "/home/mgmendoza/Documents/FinalProjectC206/devel/lib/explore_lite/explore")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/explore_lite/explore" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/explore_lite/explore")
     file(RPATH_CHANGE
@@ -73,6 +73,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/explore_lite/launch" TYPE DIRECTORY FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/explore_lite/launch" TYPE DIRECTORY FILES "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore/launch/")
 endif()
 

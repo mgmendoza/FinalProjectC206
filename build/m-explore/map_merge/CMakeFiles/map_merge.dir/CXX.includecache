@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/include/combine_grids/merging_pipeline.h
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/include/combine_grids/merging_pipeline.h
 vector
 -
 geometry_msgs/Transform.h
@@ -16,7 +16,7 @@ nav_msgs/OccupancyGrid.h
 opencv2/core/utility.hpp
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/include/map_merge/map_merge.h
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/include/map_merge/map_merge.h
 atomic
 -
 forward_list
@@ -38,7 +38,7 @@ ros/ros.h
 boost/thread.hpp
 -
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/map_merge.cpp
+/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/map_merge.cpp
 thread
 -
 map_merge/map_merge.h
@@ -766,6 +766,8 @@ ros/datatypes.h
 vector
 -
 map
+-
+memory
 -
 boost/array.hpp
 -

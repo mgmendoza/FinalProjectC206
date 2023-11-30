@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src
+CMAKE_SOURCE_DIR = /home/mgmendoza/Documents/FinalProjectC206/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build
+CMAKE_BINARY_DIR = /home/mgmendoza/Documents/FinalProjectC206/build
 
 # Utility rule file for clean_test_results_explore_lite.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalPro
 include m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/progress.make
 
 m-explore/explore/CMakeFiles/clean_test_results_explore_lite:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/test_results/explore_lite
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore && /usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/mgmendoza/Documents/FinalProjectC206/build/test_results/explore_lite
 
 clean_test_results_explore_lite: m-explore/explore/CMakeFiles/clean_test_results_explore_lite
 clean_test_results_explore_lite: m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make
@@ -67,10 +67,10 @@ m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build: clean_te
 .PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build
 
 m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_explore_lite.dir/cmake_clean.cmake
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_explore_lite.dir/cmake_clean.cmake
 .PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/clean
 
 m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/depend:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/explore /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mgmendoza/Documents/FinalProjectC206/src /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/explore /home/mgmendoza/Documents/FinalProjectC206/build /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/depend
 

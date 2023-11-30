@@ -1,8 +1,8 @@
-# Install script for directory: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge
+# Install script for directory: /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mgmendoza/Documents/FinalProjectC206/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,22 +38,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge/catkin_generated/installspace/multirobot_map_merge.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge/catkin_generated/installspace/multirobot_map_merge.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multirobot_map_merge/cmake" TYPE FILE FILES
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge/catkin_generated/installspace/multirobot_map_mergeConfig.cmake"
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge/catkin_generated/installspace/multirobot_map_mergeConfig-version.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge/catkin_generated/installspace/multirobot_map_mergeConfig.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge/catkin_generated/installspace/multirobot_map_mergeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multirobot_map_merge" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multirobot_map_merge" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,7 +63,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/multirobot_map_merge/map_merge"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/multirobot_map_merge" TYPE EXECUTABLE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/multirobot_map_merge/map_merge")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/multirobot_map_merge" TYPE EXECUTABLE FILES "/home/mgmendoza/Documents/FinalProjectC206/devel/lib/multirobot_map_merge/map_merge")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/multirobot_map_merge/map_merge" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/multirobot_map_merge/map_merge")
     file(RPATH_CHANGE
@@ -77,6 +77,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multirobot_map_merge/launch" TYPE DIRECTORY FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/multirobot_map_merge/launch" TYPE DIRECTORY FILES "/home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/launch/")
 endif()
 

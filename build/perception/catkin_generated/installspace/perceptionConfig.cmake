@@ -67,14 +67,14 @@ set(perception_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(perception_SOURCE_PREFIX /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/perception)
-  set(perception_DEVEL_PREFIX /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel)
+  set(perception_SOURCE_PREFIX /home/mgmendoza/Documents/FinalProjectC206/src/perception)
+  set(perception_DEVEL_PREFIX /home/mgmendoza/Documents/FinalProjectC206/devel)
   set(perception_INSTALL_PREFIX "")
   set(perception_PREFIX ${perception_DEVEL_PREFIX})
 else()
   set(perception_SOURCE_PREFIX "")
   set(perception_DEVEL_PREFIX "")
-  set(perception_INSTALL_PREFIX /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install)
+  set(perception_INSTALL_PREFIX /home/mgmendoza/Documents/FinalProjectC206/install)
   set(perception_PREFIX ${perception_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install/lib;/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib;/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/lab3/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/mgmendoza/Documents/FinalProjectC206/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

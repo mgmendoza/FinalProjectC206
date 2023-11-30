@@ -1,8 +1,8 @@
-# Install script for directory: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/perception
+# Install script for directory: /home/mgmendoza/Documents/FinalProjectC206/src/perception
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/install")
+  set(CMAKE_INSTALL_PREFIX "/home/mgmendoza/Documents/FinalProjectC206/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/perception/catkin_generated/installspace/perception.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/build/perception/catkin_generated/installspace/perception.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/perception/cmake" TYPE FILE FILES
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/perception/catkin_generated/installspace/perceptionConfig.cmake"
-    "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/perception/catkin_generated/installspace/perceptionConfig-version.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/perception/catkin_generated/installspace/perceptionConfig.cmake"
+    "/home/mgmendoza/Documents/FinalProjectC206/build/perception/catkin_generated/installspace/perceptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/perception" TYPE FILE FILES "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/perception/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/perception" TYPE FILE FILES "/home/mgmendoza/Documents/FinalProjectC206/src/perception/package.xml")
 endif()
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src
+CMAKE_SOURCE_DIR = /home/mgmendoza/Documents/FinalProjectC206/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build
+CMAKE_BINARY_DIR = /home/mgmendoza/Documents/FinalProjectC206/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mgmendoza/Documents/FinalProjectC206/src /home/mgmendoza/Documents/FinalProjectC206/src /home/mgmendoza/Documents/FinalProjectC206/build /home/mgmendoza/Documents/FinalProjectC206/build /home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

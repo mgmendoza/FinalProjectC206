@@ -1,4 +1,4 @@
-prefix=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel
+prefix=/home/mgmendoza/Documents/FinalProjectC206/devel
 
 Name: perception
 Description: Description of perception

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src
+CMAKE_SOURCE_DIR = /home/mgmendoza/Documents/FinalProjectC206/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build
+CMAKE_BINARY_DIR = /home/mgmendoza/Documents/FinalProjectC206/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -104,8 +104,8 @@ test/fast: test
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/explore/CMakeFiles/progress.marks
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles 0
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/explore/CMakeFiles/progress.marks
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/clean
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/preinstall
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/preinstall
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ _run_tests_explore_lite_roslaunch-check_launch: m-explore/explore/CMakeFiles/_ru
 
 # fast build rule for target.
 _run_tests_explore_lite_roslaunch-check_launch/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check_launch.dir/build
 .PHONY : _run_tests_explore_lite_roslaunch-check_launch/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ clean_test_results_explore_lite: m-explore/explore/CMakeFiles/clean_test_results
 
 # fast build rule for target.
 clean_test_results_explore_lite/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build.make m-explore/explore/CMakeFiles/clean_test_results_explore_lite.dir/build
 .PHONY : clean_test_results_explore_lite/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ run_tests_explore_lite_roslaunch-check_launch: m-explore/explore/CMakeFiles/run_
 
 # fast build rule for target.
 run_tests_explore_lite_roslaunch-check_launch/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check_launch.dir/build
 .PHONY : run_tests_explore_lite_roslaunch-check_launch/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ _run_tests_explore_lite_roslaunch-check: m-explore/explore/CMakeFiles/_run_tests
 
 # fast build rule for target.
 _run_tests_explore_lite_roslaunch-check/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite_roslaunch-check.dir/build
 .PHONY : _run_tests_explore_lite_roslaunch-check/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ run_tests_explore_lite_roslaunch-check: m-explore/explore/CMakeFiles/run_tests_e
 
 # fast build rule for target.
 run_tests_explore_lite_roslaunch-check/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite_roslaunch-check.dir/build
 .PHONY : run_tests_explore_lite_roslaunch-check/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ _run_tests_explore_lite: m-explore/explore/CMakeFiles/_run_tests_explore_lite.di
 
 # fast build rule for target.
 _run_tests_explore_lite/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/_run_tests_explore_lite.dir/build
 .PHONY : _run_tests_explore_lite/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ run_tests_explore_lite: m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/
 
 # fast build rule for target.
 run_tests_explore_lite/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build.make m-explore/explore/CMakeFiles/run_tests_explore_lite.dir/build
 .PHONY : run_tests_explore_lite/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ dynamic_reconfigure_generate_messages_nodejs: m-explore/explore/CMakeFiles/dynam
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ costmap_2d_generate_messages_py: m-explore/explore/CMakeFiles/costmap_2d_generat
 
 # fast build rule for target.
 costmap_2d_generate_messages_py/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_py.dir/build
 .PHONY : costmap_2d_generate_messages_py/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ dynamic_reconfigure_generate_messages_py: m-explore/explore/CMakeFiles/dynamic_r
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ costmap_2d_generate_messages_nodejs: m-explore/explore/CMakeFiles/costmap_2d_gen
 
 # fast build rule for target.
 costmap_2d_generate_messages_nodejs/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_nodejs.dir/build
 .PHONY : costmap_2d_generate_messages_nodejs/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ costmap_2d_generate_messages_eus: m-explore/explore/CMakeFiles/costmap_2d_genera
 
 # fast build rule for target.
 costmap_2d_generate_messages_eus/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_eus.dir/build
 .PHONY : costmap_2d_generate_messages_eus/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ dynamic_reconfigure_generate_messages_cpp: m-explore/explore/CMakeFiles/dynamic_
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ tf_generate_messages_lisp: m-explore/explore/CMakeFiles/tf_generate_messages_lis
 
 # fast build rule for target.
 tf_generate_messages_lisp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_lisp.dir/build
 .PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ dynamic_reconfigure_generate_messages_eus: m-explore/explore/CMakeFiles/dynamic_
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ dynamic_reconfigure_gencfg: m-explore/explore/CMakeFiles/dynamic_reconfigure_gen
 
 # fast build rule for target.
 dynamic_reconfigure_gencfg/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ move_base_msgs_generate_messages_eus: m-explore/explore/CMakeFiles/move_base_msg
 
 # fast build rule for target.
 move_base_msgs_generate_messages_eus/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_eus.dir/build
 .PHONY : move_base_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ dynamic_reconfigure_generate_messages_lisp: m-explore/explore/CMakeFiles/dynamic
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ move_base_msgs_generate_messages_lisp: m-explore/explore/CMakeFiles/move_base_ms
 
 # fast build rule for target.
 move_base_msgs_generate_messages_lisp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_lisp.dir/build
 .PHONY : move_base_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ costmap_2d_gencfg: m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/rule
 
 # fast build rule for target.
 costmap_2d_gencfg/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_gencfg.dir/build
 .PHONY : costmap_2d_gencfg/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ costmap_2d_generate_messages_cpp: m-explore/explore/CMakeFiles/costmap_2d_genera
 
 # fast build rule for target.
 costmap_2d_generate_messages_cpp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_cpp.dir/build
 .PHONY : costmap_2d_generate_messages_cpp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ tf_generate_messages_cpp: m-explore/explore/CMakeFiles/tf_generate_messages_cpp.
 
 # fast build rule for target.
 tf_generate_messages_cpp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_cpp.dir/build
 .PHONY : tf_generate_messages_cpp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ visualization_msgs_generate_messages_nodejs: m-explore/explore/CMakeFiles/visual
 
 # fast build rule for target.
 visualization_msgs_generate_messages_nodejs/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 .PHONY : visualization_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ costmap_2d_generate_messages_lisp: m-explore/explore/CMakeFiles/costmap_2d_gener
 
 # fast build rule for target.
 costmap_2d_generate_messages_lisp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/costmap_2d_generate_messages_lisp.dir/build
 .PHONY : costmap_2d_generate_messages_lisp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ _catkin_empty_exported_target: m-explore/explore/CMakeFiles/_catkin_empty_export
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/build.make m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/build.make m-explore/explore/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ tf_generate_messages_eus: m-explore/explore/CMakeFiles/tf_generate_messages_eus.
 
 # fast build rule for target.
 tf_generate_messages_eus/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_eus.dir/build
 .PHONY : tf_generate_messages_eus/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ move_base_msgs_generate_messages_nodejs: m-explore/explore/CMakeFiles/move_base_
 
 # fast build rule for target.
 move_base_msgs_generate_messages_nodejs/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_nodejs.dir/build
 .PHONY : move_base_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ tf_generate_messages_nodejs: m-explore/explore/CMakeFiles/tf_generate_messages_n
 
 # fast build rule for target.
 tf_generate_messages_nodejs/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_nodejs.dir/build
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ visualization_msgs_generate_messages_eus: m-explore/explore/CMakeFiles/visualiza
 
 # fast build rule for target.
 visualization_msgs_generate_messages_eus/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_eus.dir/build
 .PHONY : visualization_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ visualization_msgs_generate_messages_cpp: m-explore/explore/CMakeFiles/visualiza
 
 # fast build rule for target.
 visualization_msgs_generate_messages_cpp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_cpp.dir/build
 .PHONY : visualization_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ tf_generate_messages_py: m-explore/explore/CMakeFiles/tf_generate_messages_py.di
 
 # fast build rule for target.
 tf_generate_messages_py/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ move_base_msgs_generate_messages_py: m-explore/explore/CMakeFiles/move_base_msgs
 
 # fast build rule for target.
 move_base_msgs_generate_messages_py/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_py.dir/build
 .PHONY : move_base_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ visualization_msgs_generate_messages_lisp: m-explore/explore/CMakeFiles/visualiz
 
 # fast build rule for target.
 visualization_msgs_generate_messages_lisp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/build
 .PHONY : visualization_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ visualization_msgs_generate_messages_py: m-explore/explore/CMakeFiles/visualizat
 
 # fast build rule for target.
 visualization_msgs_generate_messages_py/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build.make m-explore/explore/CMakeFiles/visualization_msgs_generate_messages_py.dir/build
 .PHONY : visualization_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ move_base_msgs_generate_messages_cpp: m-explore/explore/CMakeFiles/move_base_msg
 
 # fast build rule for target.
 move_base_msgs_generate_messages_cpp/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build.make m-explore/explore/CMakeFiles/move_base_msgs_generate_messages_cpp.dir/build
 .PHONY : move_base_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 m-explore/explore/CMakeFiles/explore.dir/rule:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/explore.dir/rule
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f CMakeFiles/Makefile2 m-explore/explore/CMakeFiles/explore.dir/rule
 .PHONY : m-explore/explore/CMakeFiles/explore.dir/rule
 
 # Convenience name for target.
@@ -704,7 +704,7 @@ explore: m-explore/explore/CMakeFiles/explore.dir/rule
 
 # fast build rule for target.
 explore/fast:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/build
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/build
 .PHONY : explore/fast
 
 src/costmap_client.o: src/costmap_client.cpp.o
@@ -713,7 +713,7 @@ src/costmap_client.o: src/costmap_client.cpp.o
 
 # target to build an object file
 src/costmap_client.cpp.o:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.o
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.o
 .PHONY : src/costmap_client.cpp.o
 
 src/costmap_client.i: src/costmap_client.cpp.i
@@ -722,7 +722,7 @@ src/costmap_client.i: src/costmap_client.cpp.i
 
 # target to preprocess a source file
 src/costmap_client.cpp.i:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.i
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.i
 .PHONY : src/costmap_client.cpp.i
 
 src/costmap_client.s: src/costmap_client.cpp.s
@@ -731,7 +731,7 @@ src/costmap_client.s: src/costmap_client.cpp.s
 
 # target to generate assembly for a file
 src/costmap_client.cpp.s:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.s
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/costmap_client.cpp.s
 .PHONY : src/costmap_client.cpp.s
 
 src/explore.o: src/explore.cpp.o
@@ -740,7 +740,7 @@ src/explore.o: src/explore.cpp.o
 
 # target to build an object file
 src/explore.cpp.o:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.o
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.o
 .PHONY : src/explore.cpp.o
 
 src/explore.i: src/explore.cpp.i
@@ -749,7 +749,7 @@ src/explore.i: src/explore.cpp.i
 
 # target to preprocess a source file
 src/explore.cpp.i:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.i
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.i
 .PHONY : src/explore.cpp.i
 
 src/explore.s: src/explore.cpp.s
@@ -758,7 +758,7 @@ src/explore.s: src/explore.cpp.s
 
 # target to generate assembly for a file
 src/explore.cpp.s:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.s
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/explore.cpp.s
 .PHONY : src/explore.cpp.s
 
 src/frontier_search.o: src/frontier_search.cpp.o
@@ -767,7 +767,7 @@ src/frontier_search.o: src/frontier_search.cpp.o
 
 # target to build an object file
 src/frontier_search.cpp.o:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.o
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.o
 .PHONY : src/frontier_search.cpp.o
 
 src/frontier_search.i: src/frontier_search.cpp.i
@@ -776,7 +776,7 @@ src/frontier_search.i: src/frontier_search.cpp.i
 
 # target to preprocess a source file
 src/frontier_search.cpp.i:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.i
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.i
 .PHONY : src/frontier_search.cpp.i
 
 src/frontier_search.s: src/frontier_search.cpp.s
@@ -785,7 +785,7 @@ src/frontier_search.s: src/frontier_search.cpp.s
 
 # target to generate assembly for a file
 src/frontier_search.cpp.s:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.s
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(MAKE) -f m-explore/explore/CMakeFiles/explore.dir/build.make m-explore/explore/CMakeFiles/explore.dir/src/frontier_search.cpp.s
 .PHONY : src/frontier_search.cpp.s
 
 # Help Target
@@ -857,6 +857,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

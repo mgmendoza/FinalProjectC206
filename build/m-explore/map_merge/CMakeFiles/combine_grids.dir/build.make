@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src
+CMAKE_SOURCE_DIR = /home/mgmendoza/Documents/FinalProjectC206/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build
+CMAKE_BINARY_DIR = /home/mgmendoza/Documents/FinalProjectC206/build
 
 # Include any dependencies generated for this target.
 include m-explore/map_merge/CMakeFiles/combine_grids.dir/depend.make
@@ -58,43 +58,43 @@ include m-explore/map_merge/CMakeFiles/combine_grids.dir/progress.make
 include m-explore/map_merge/CMakeFiles/combine_grids.dir/flags.make
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o: m-explore/map_merge/CMakeFiles/combine_grids.dir/flags.make
-m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o -c /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp
+m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o: /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o"
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o -c /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.i"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp > CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.i
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp > CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.i
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.s"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.s
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_compositor.cpp -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.s
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o: m-explore/map_merge/CMakeFiles/combine_grids.dir/flags.make
-m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o -c /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp
+m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o: /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o"
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o -c /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.i"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp > CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.i
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp > CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.i
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.s"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.s
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/grid_warper.cpp -o CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.s
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o: m-explore/map_merge/CMakeFiles/combine_grids.dir/flags.make
-m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o -c /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp
+m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o: /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o"
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o -c /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.i"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp > CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.i
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp > CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.i
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.s"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp -o CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.s
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge/src/combine_grids/merging_pipeline.cpp -o CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.s
 
 # Object files for target combine_grids
 combine_grids_OBJECTS = \
@@ -105,25 +105,25 @@ combine_grids_OBJECTS = \
 # External object files for target combine_grids
 combine_grids_EXTERNAL_OBJECTS =
 
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/build.make
-/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a"
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && $(CMAKE_COMMAND) -P CMakeFiles/combine_grids.dir/cmake_clean_target.cmake
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/combine_grids.dir/link.txt --verbose=$(VERBOSE)
+/home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_compositor.cpp.o
+/home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/grid_warper.cpp.o
+/home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/src/combine_grids/merging_pipeline.cpp.o
+/home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/build.make
+/home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a: m-explore/map_merge/CMakeFiles/combine_grids.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mgmendoza/Documents/FinalProjectC206/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library /home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a"
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && $(CMAKE_COMMAND) -P CMakeFiles/combine_grids.dir/cmake_clean_target.cmake
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/combine_grids.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-m-explore/map_merge/CMakeFiles/combine_grids.dir/build: /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/libcombine_grids.a
+m-explore/map_merge/CMakeFiles/combine_grids.dir/build: /home/mgmendoza/Documents/FinalProjectC206/devel/lib/libcombine_grids.a
 
 .PHONY : m-explore/map_merge/CMakeFiles/combine_grids.dir/build
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/clean:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge && $(CMAKE_COMMAND) -P CMakeFiles/combine_grids.dir/cmake_clean.cmake
+	cd /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge && $(CMAKE_COMMAND) -P CMakeFiles/combine_grids.dir/cmake_clean.cmake
 .PHONY : m-explore/map_merge/CMakeFiles/combine_grids.dir/clean
 
 m-explore/map_merge/CMakeFiles/combine_grids.dir/depend:
-	cd /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/src/m-explore/map_merge /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge /home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/build/m-explore/map_merge/CMakeFiles/combine_grids.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mgmendoza/Documents/FinalProjectC206/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mgmendoza/Documents/FinalProjectC206/src /home/mgmendoza/Documents/FinalProjectC206/src/m-explore/map_merge /home/mgmendoza/Documents/FinalProjectC206/build /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge /home/mgmendoza/Documents/FinalProjectC206/build/m-explore/map_merge/CMakeFiles/combine_grids.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : m-explore/map_merge/CMakeFiles/combine_grids.dir/depend
 

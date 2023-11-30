@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/explore_lite/explore"
-  "/home/cc/ee106a/fa23/class/ee106a-abi/ros_workspaces/FinalProjectC206/devel/lib/explore_lite/explore.pdb"
+  "/home/mgmendoza/Documents/FinalProjectC206/devel/lib/explore_lite/explore"
+  "/home/mgmendoza/Documents/FinalProjectC206/devel/lib/explore_lite/explore.pdb"
   "CMakeFiles/explore.dir/src/costmap_client.cpp.o"
   "CMakeFiles/explore.dir/src/explore.cpp.o"
   "CMakeFiles/explore.dir/src/frontier_search.cpp.o"
