@@ -11,7 +11,7 @@ import os
 import time
 import tf
 from geometry_msgs.msg import Point, PointStamped
-from std_msgs.msg import Header
+from std_msgs.msg import Header, Bool
 
 
 PLOTS_DIR = os.path.join(os.getcwd(), 'plots')
@@ -28,6 +28,7 @@ class ObjectDetector:
         self.color_image_sub = rospy.Subscriber("/camera/color/image_raw", Image, self.color_image_callback)
         self.depth_image_sub = rospy.Subscriber("/camera/aligned_depth_to_color/image_raw", Image, self.depth_image_callback)
 
+
         self.fx = None
         self.fy = None
         self.cx = None
@@ -39,6 +40,8 @@ class ObjectDetector:
 
         self.point_pub = rospy.Publisher("goal_point", Point, queue_size=10)
         self.image_pub = rospy.Publisher('detected_cup', Image, queue_size=10)
+        self.found_obj_pub = rospy.Publisher('found_obj', Bool, queue_size=10)
+
 
         rospy.spin()
 
@@ -137,12 +140,16 @@ class ObjectDetector:
                 print("Real-world coordinates in odom frame: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(X_odom, Y_odom, Z_odom))
 
                 if X_odom < 0.001 and X_odom > -0.001:
+                    print("Sending Not Found Obj...")
+                    self.found_obj_pub.publish(False)
                     Z_odom = -100
                     X_odom = -100
                     Y_odom = -100
                     print("Real-world coordinates not detected: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(X_odom, Y_odom, Z_odom))
                     self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
                 else:
+                    self.found_obj_pub.publish(True)
+                    print("Sending Found Obj...")
                     print("Publishing goal point: ", X_odom, Y_odom, Z_odom)
                     # Publish the transformed point
                     self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
