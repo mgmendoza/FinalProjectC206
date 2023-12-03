@@ -1,2 +1,0 @@
-m-explore/explore:m-explore/map_merge:perception:plannedcntrl
--DCATKIN_DEVEL_PREFIX=/home/mgmendoza/Documents/FinalProjectC206/devel -DCMAKE_INSTALL_PREFIX=/home/mgmendoza/Documents/FinalProjectC206/install -G Unix Makefiles
