@@ -4,160 +4,185 @@ import rospy
 import cv2
 import numpy as np
 from sensor_msgs.msg import Image
-from sensor_msgs.msg import CameraInfo # For camera intrinsic parameters
 from cv_bridge import CvBridge
-import matplotlib.pyplot as plt
-import os
-import time
 import tf
 from geometry_msgs.msg import Point, PointStamped
 from std_msgs.msg import Header
 
 
-PLOTS_DIR = os.path.join(os.getcwd(), 'plots')
-
 class ObjectDetector:
     def __init__(self):
-        rospy.init_node('object_detector', anonymous=True)
+        rospy.init_node("object_detector", anonymous=True)
 
         self.bridge = CvBridge()
 
         self.cv_color_image = None
         self.cv_depth_image = None
 
-        self.color_image_sub = rospy.Subscriber("/camera/color/image_raw", Image, self.color_image_callback)
-        self.depth_image_sub = rospy.Subscriber("/camera/aligned_depth_to_color/image_raw", Image, self.depth_image_callback)
-
-        self.fx = None
-        self.fy = None
-        self.cx = None
-        self.cy = None
-
-        self.camera_info_sub = rospy.Subscriber("/camera/color/camera_info", CameraInfo, self.camera_info_callback)
+        self.color_image_sub = rospy.Subscriber(
+            "/camera/color/image_raw", Image, self.color_image_callback
+        )
+        self.depth_image_sub = rospy.Subscriber(
+            "/camera/aligned_depth_to_color/image_raw", Image, self.depth_image_callback
+        )
 
         self.tf_listener = tf.TransformListener()  # Create a TransformListener object
 
         self.point_pub = rospy.Publisher("goal_point", Point, queue_size=10)
-        self.image_pub = rospy.Publisher('detected_cup', Image, queue_size=10)
+        self.image_pub = rospy.Publisher("detected_object", Image, queue_size=10)
 
         rospy.spin()
 
-    def camera_info_callback(self, msg):
-        # TODO: Extract the intrinsic parameters from the CameraInfo message
-        self.fx = msg.K[0]
-        self.fy = msg.K[4]
-        self.cx = msg.K[2]
-        self.cy = msg.K[5]
-
-    def pixel_to_point(self, u, v, depth):
-        # TODO: Use the camera intrinsics to convert pixel coordinates to real-world coordinates
-        X = (u - self.cx) / self.fx * depth
-        Y = (v - self.cy) / self.fy * depth
-        # Z = np.sqrt(depth**2 - X**2 - Y**2)
-        Z = depth
-        return X, Y, Z
-
     def color_image_callback(self, msg):
         try:
-            # Convert the ROS Image message to an OpenCV image (BGR8 format)
             self.cv_color_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
-
-            # If we have both color and depth images, process them
             if self.cv_depth_image is not None:
                 self.process_images()
-
         except Exception as e:
-            print("Error:", e)
+            rospy.logerr("Error in color_image_callback: {}".format(e))
 
     def depth_image_callback(self, msg):
         try:
-            # Convert the ROS Image message to an OpenCV image (16UC1 format)
             self.cv_depth_image = self.bridge.imgmsg_to_cv2(msg, "16UC1")
-
         except Exception as e:
-            print("Error:", e)
+            rospy.logerr("Error in depth_image_callback: {}".format(e))
 
-    def rgb_to_hsv(self, rgb_threshold):
-        # Convert the RGB numpy array to an HSV numpy array.
-        hsv_threshold = cv2.cvtColor(np.uint8([[rgb_threshold]]), cv2.COLOR_RGB2HSV)[0][0]
-        return hsv_threshold
+    def detect_object_and_calculate_confidence(
+        self, image, object_type, color_lower, color_upper
+    ):
+        hsv_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+        mask = cv2.inRange(hsv_image, color_lower, color_upper)
+        kernel = np.ones((3, 3), np.uint8)
+        mask = cv2.dilate(mask, kernel, iterations=3)
+        mask = cv2.erode(mask, kernel, iterations=2)
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+        if not contours:
+            return None, None, None, 0
+
+        largest_contour = max(contours, key=cv2.contourArea)
+        circle_mask = np.zeros(mask.shape[:2], dtype="uint8")
+        center = None
+        radius = 0
+
+        if object_type == "basketball":
+            (x, y), radius = cv2.minEnclosingCircle(largest_contour)
+            cv2.circle(circle_mask, (int(x), int(y)), int(radius), 255, -1)
+            center = (int(x), int(y))
+
+        masked = cv2.bitwise_and(mask, mask, mask=circle_mask)
+        total_pixels = cv2.countNonZero(circle_mask)
+        matching_pixels = cv2.countNonZero(masked)
+        confidence = (
+            (matching_pixels / float(total_pixels)) * 100 if total_pixels > 0 else 0
+        )
+
+        if confidence > 15:
+            cv2.circle(image, center, int(radius), (0, 255, 0), 3)
+        return largest_contour, confidence, center, radius
 
     def process_images(self):
-        # Convert the color image to HSV color space
-        hsv = cv2.cvtColor(self.cv_color_image, cv2.COLOR_BGR2HSV)
-        mean_hsv = np.mean(hsv, axis=(0,1))
-        std_hsv = np.std(hsv, axis=(0,1))
-        # TODO: Define range for cup color in RGB
-        # NOTE: You can visualize how this is performing by viewing the result of the segmentation in rviz
-        lower_rgb = np.array([73, 145, 82])
-        upper_rgb = np.array([185, 225, 134])
+        orange_lower = np.array([0, 210, 180], np.uint8)
+        orange_upper = np.array([30, 250, 255], np.uint8)
 
-        # Convert RGB thresholds to HSV
-        lower_hsv = np.array([40, 80, 115])
-        upper_hsv = np.array([95, 220, 205])
-        # print("after",type(lower_hsv), upper_hsv)
+        (
+            basketball_contour,
+            basketball_confidence,
+            basketball_center,
+            basketball_radius,
+        ) = self.detect_object_and_calculate_confidence(
+            self.cv_color_image, "basketball", orange_lower, orange_upper
+        )
 
-        # TODO: Threshold the image to get only cup colors
-        # HINT: Lookup np.where() or cv2.inRange()
-        mask = cv2.inRange(hsv, lower_hsv, upper_hsv)
+        rospy.loginfo(f"Basketball Confidence: {basketball_confidence}%")
 
-        # TODO: Get the coordinates of the cup points on the mask
-        # HINT: Lookup np.nonzero() or np.where()
-        y_coords, x_coords = np.nonzero(mask)
+        if basketball_center is not None:
+            depth = self.cv_depth_image[basketball_center[1], basketball_center[0]]
+            if depth > 0:
+                try:
+                    camera_link_x, camera_link_y, camera_link_z = self.pixel_to_point(
+                        basketball_center[0], basketball_center[1], depth
+                    )
 
-        # If there are no detected points, exit
-        if len(x_coords) == 0 or len(y_coords) == 0:
-            print("No points detected. Is your color filter wrong?")
-            Z_odom = -100
-            X_odom = -100
-            Y_odom = -100
-            self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
-            return
+                    self.tf_listener.waitForTransform(
+                        "/odom", "/camera_link", rospy.Time(), rospy.Duration(10.0)
+                    )
+                    point_odom = self.tf_listener.transformPoint(
+                        "/odom",
+                        PointStamped(
+                            header=Header(stamp=rospy.Time(), frame_id="/camera_link"),
+                            point=Point(camera_link_x, camera_link_y, camera_link_z),
+                        ),
+                    )
+                    X_odom, Y_odom, Z_odom = (
+                        point_odom.point.x,
+                        point_odom.point.y,
+                        point_odom.point.z,
+                    )
+                    rospy.loginfo(
+                        "Real-world coordinates in odom frame: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(
+                            X_odom, Y_odom, Z_odom
+                        )
+                    )
 
-        # Calculate the center of the detected region by 
-        center_x = int(np.mean(x_coords))
-        center_y = int(np.mean(y_coords))
+                    if X_odom < 0.001 and X_odom > -0.001:
+                        Z_odom = -100
+                        X_odom = -100
+                        Y_odom = -100
+                        rospy.loginfo(
+                            "Real-world coordinates not detected: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(
+                                X_odom, Y_odom, Z_odom
+                            )
+                        )
+                        self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
+                    else:
+                        rospy.loginfo(
+                            "Publishing goal point: {:.2f}m, {:.2f}m, {:.2f}m".format(
+                                X_odom, Y_odom, Z_odom
+                            )
+                        )
+                        self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
 
-        # Fetch the depth value at the center
-        depth = self.cv_depth_image[center_y, center_x]
+                        # Draw and publish the detected basketball
+                        detected_image = self.cv_color_image.copy()
+                        cv2.circle(
+                            detected_image,
+                            basketball_center,
+                            int(basketball_radius),
+                            (0, 0, 255),
+                            2,
+                        )  # Red circle around the basketball
+                        cv2.circle(
+                            detected_image, basketball_center, 5, (0, 255, 0), -1
+                        )  # Green dot at the center
+                        ros_image = self.bridge.cv2_to_imgmsg(detected_image, "bgr8")
+                        self.image_pub.publish(ros_image)
+                except (
+                    tf.LookupException,
+                    tf.ConnectivityException,
+                    tf.ExtrapolationException,
+                ) as e:
+                    rospy.logerr("TF Error: {}".format(e))
+                    return
 
-        if self.fx and self.fy and self.cx and self.cy:
-            camera_x, camera_y, camera_z = self.pixel_to_point(center_x, center_y, depth)
-            camera_link_x, camera_link_y, camera_link_z = camera_z, -camera_x, -camera_y
-            # Convert from mm to m
-            camera_link_x /= 1000
-            camera_link_y /= 1000
-            camera_link_z /= 1000
+    def pixel_to_point(self, u, v, depth):
+        # Convert pixel coordinates to real-world coordinates
+        X = (
+            (u - self.cv_color_image.shape[1] / 2)
+            * depth
+            / self.cv_color_image.shape[1]
+        )
+        Y = (
+            (v - self.cv_color_image.shape[0] / 2)
+            * depth
+            / self.cv_color_image.shape[0]
+        )
+        Z = depth
+        return X, Y, Z
 
-            # Convert the (X, Y, Z) coordinates from camera frame to odom frame
-            try:
-                self.tf_listener.waitForTransform("/odom", "/camera_link", rospy.Time(), rospy.Duration(10.0))
-                point_odom = self.tf_listener.transformPoint("/odom", PointStamped(header=Header(stamp=rospy.Time(), frame_id="/camera_link"), point=Point(camera_link_x, camera_link_y, camera_link_z)))
-                X_odom, Y_odom, Z_odom = point_odom.point.x, point_odom.point.y, point_odom.point.z
-                print("Real-world coordinates in odom frame: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(X_odom, Y_odom, Z_odom))
 
-                if X_odom < 0.001 and X_odom > -0.001:
-                    Z_odom = -100
-                    X_odom = -100
-                    Y_odom = -100
-                    print("Real-world coordinates not detected: (X, Y, Z) = ({:.2f}m, {:.2f}m, {:.2f}m)".format(X_odom, Y_odom, Z_odom))
-                    self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
-                else:
-                    print("Publishing goal point: ", X_odom, Y_odom, Z_odom)
-                    # Publish the transformed point
-                    self.point_pub.publish(Point(X_odom, Y_odom, Z_odom))
-
-                    # Overlay cup points on color image for visualization
-                    cup_img = self.cv_color_image.copy()
-                    cup_img[y_coords, x_coords] = [0, 0, 255]  # Highlight cup points in red
-                    cv2.circle(cup_img, (center_x, center_y), 5, [0, 255, 0], -1)  # Draw green circle at center
-                    
-                    # Convert to ROS Image message and publish
-                    ros_image = self.bridge.cv2_to_imgmsg(cup_img, "bgr8")
-                    self.image_pub.publish(ros_image)
-            except (tf.LookupException, tf.ConnectivityException, tf.ExtrapolationException) as e:
-                print("TF Error: " + e)
-                return
-
-if __name__ == '__main__':
-    ObjectDetector()
+if __name__ == "__main__":
+    try:
+        ObjectDetector()
+    except rospy.ROSInterruptException:
+        pass
