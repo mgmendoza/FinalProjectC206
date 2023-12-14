@@ -111,3 +111,8 @@ roslaunch explore_lite explore.launch
 This section is only for those who do not have Ubunto 20.04 and wish to try this project. 
 1. Install Docker on your computer. Follow the directions on the [Docker website](https://docs.docker.com/engine/install/) for installation and testing according to the OS you have.
 2. After you clone this repository, go to the ```cd ./docker```
+   optional: To run docker without sudo: ```sudo usermod -aG docker $USER```
+4. Build the container ```docker build -t ros-noetic-container```
+5. You only need to do this once: ```mkdir ~/Volumes```
+6. Build the docker image:
+7. Run the docker container:
