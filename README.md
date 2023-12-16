@@ -4,7 +4,7 @@ obstacles and tasked to find an object. The Turtlebot will survey the scenario, 
 through all possible hiding places, and search using its onboard camera and Computer Vision (CV) for a
 specific item it was ordered to find. This will include algorithms from path planning, CV, and SLAM.
 
-Check out our [project website](https://github.com/mgmendoza/pirate-turtlebot.github.io)
+Check out our [project website](https://mgmendoza.github.io/pirate-turtlebot.github.io/)
 
 ## Project Goals
 The goal is to teach a turtlebot to find an object inside an environment. The environment and the object's location will be unknown to the Turtlebot. The location of the obstacles will also vary every time we command the turtlebot to find the object. The Turtlebot should be able to navigate the environment
