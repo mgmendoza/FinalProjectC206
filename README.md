@@ -1,18 +1,18 @@
 # Final Project C206: Pirate Bot Treasure Hunt
-This is the final ROS project for UC Berkeley's C206 robotics class. Teach a Turtlebot to play "Find the Treasure". A Turtlebot is placed in an unseen scenario with
-obstacles to find a specific item. The Turtlebot will survey the scenario, plan a trajectory to go
+This project was created for UC Berkeley's C206 Final Project robotics class. The goal is to teach a Turtlebot to play "Find the Treasure". A Turtlebot is placed in an unseen scenario with
+obstacles and tasked to find an object. The Turtlebot will survey the scenario, plan a trajectory to go
 through all possible hiding places, and search using its onboard camera and Computer Vision (CV) for a
 specific item it was ordered to find. This will include algorithms from path planning, CV, and SLAM.
 
 ## Project Goals
-Our goal is to teach a turtlebot to find an object inside an environment. The environment and the object's location will be unknown to the Turtlebot. The location of the obstacles will also vary every time we command the turtlebot to find the object. The Turtlebot should be able to navigate the environment
+The goal is to teach a turtlebot to find an object inside an environment. The environment and the object's location will be unknown to the Turtlebot. The location of the obstacles will also vary every time we command the turtlebot to find the object. The Turtlebot should be able to navigate the environment
 and avoid obstacles to find the object of interest. Once the turtle has found the object, it will stop and send a message indicating it has completed the task.
 
-This project can be run in simulation or hardware
+This project can be run in simulation or on hardware.
 
 ## Software and Hardware
 
-Turtlebot with the included lab’s hardware:
+Turtlebot with the included the lab’s hardware:
 * Two main drive wheels DYNAMIXEL
 * IMU (Gyroscope 3 axis, Accelerometer 3-axis)
 * Power connectors and peripherals
@@ -54,7 +54,10 @@ Our software will include the following packages:
 ssh fruit@fruit
 ```
 3. Add the password of the Turtlebot3
-4. In ```ssh```, bring up the Turtlebot
+
+Optional: You can just run ```./scripts/pirate_run.sh``` and avoid steps 5-10. (You might need to run first ```chmod +x .scripts/pirate_run.sh```)
+
+5. In ```ssh```, bring up the Turtlebot
 ```
 roslaunch turtlebot3_bringup turtlebot3_robot.launch--screen
 ```
@@ -107,12 +110,12 @@ rosrun perception object_detector.py
 roslaunch explore_lite explore.launch
 ```
 
-## Using Docker
+## No Ubuntu 20.04? No problem- You can use Docker
 This section is only for those who do not have Ubunto 20.04 and wish to try this project. 
 1. Install Docker on your computer. Follow the directions on the [Docker website](https://docs.docker.com/engine/install/) for installation and testing according to the OS you have.
 2. After you clone this repository, go to the ```cd ./docker```
    optional: To run docker without sudo: ```sudo usermod -aG docker $USER```
 4. Build the container ```docker build -t ros-noetic-container```
 5. You only need to do this once: ```mkdir ~/Volumes```
-6. Build the docker image:
-7. Run the docker container:
+6. Build the docker image: ```sudo docker build ~/Docker -t ros-noetic-container```
+7. Run the docker container: ```sudo docker run -it --rm --user=$(id -u $USER):$(id -g $USER) --env=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --volume="/etc/group:/etc/group:ro" --volume="/etc/passwd:/etc/passwd:ro" --volume="/etc/shadow:/etc/shadow:ro" --volume="/etc/sudoers.d:/etc/sudoers.d:ro" --net host -v /home:/home -v ~/Volumes:/home/usr/ ros-noetic-container```
